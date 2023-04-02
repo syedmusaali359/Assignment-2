@@ -30,3 +30,17 @@ jobs:
          with:
            push: true
            tags: ${{ secrets.dockerhub_username }}/s2:v1
+  
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      -
+        name: Test my app
+        working-directory: ./
+        run: |
+          echo "Start test"
+          pip3 install -r requirements.txt
+          python3 test_app.py
+          echo "Stop test"
