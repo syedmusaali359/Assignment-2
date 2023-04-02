@@ -40,7 +40,7 @@ jobs:
         name: Test my app
         working-directory: ./
         run: |
-          echo "Start test"
-          pip3 install -r requirements.txt
-          python3 test_app.py
-          echo "Stop test"
+          echo "START"
+          pip install -r req.txt
+          python test_app.py
+          echo "STOP"
