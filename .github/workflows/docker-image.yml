@@ -29,4 +29,4 @@ jobs:
          uses: docker/build-push-action@v4
          with:
            push: true
-           tags: musa359 # ${{ secrets.DOCKER_USERNAME }}/s2:latest
+           tags: musa359/s2:latest
