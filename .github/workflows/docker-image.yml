@@ -42,5 +42,5 @@ jobs:
         run: |
           echo "START"
           pip install -r req.txt
-          python test_app.py
+          python testApp.py
           echo "STOP"
