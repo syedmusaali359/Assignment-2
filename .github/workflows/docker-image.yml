@@ -28,4 +28,4 @@ jobs:
          uses: docker/build-push-action@v4
          with:
            push: true
-           tags: umerarshad123/flask_a2:latest
+           tags: musashah359/asign2
